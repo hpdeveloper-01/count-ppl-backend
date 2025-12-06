@@ -3,10 +3,54 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
 .venv/
+myenv/
+
+# Python packages and build outputs
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+*.log
+logs/
+nohup.out
+
+# Python cache and misc
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+
+# YOLO model weights and large binaries
+*.pt
+*.weights
+*.onnx
+*.tflite
 
 # Environment variables
 .env

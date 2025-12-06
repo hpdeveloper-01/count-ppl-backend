@@ -7,8 +7,8 @@ easier to maintain and configure.
 """
 
 # YOLO Model Configuration
-DEFAULT_YOLO_MODEL_PATH = "yolov8n.pt"  # Nano model for faster inference
-YOLO_CONFIDENCE_THRESHOLD = 0.5  # Minimum confidence for person detection
+DEFAULT_YOLO_MODEL_PATH = "yolov8l.pt"  # Large model for maximum accuracy (1500ms headroom available)
+YOLO_CONFIDENCE_THRESHOLD = 0.1  # Minimum confidence for person detection (lowered for better detection)
 PERSON_CLASS_ID = 0  # COCO dataset class ID for "person"
 
 # Image Processing Configuration
@@ -22,7 +22,7 @@ RETRY_DELAY_SECONDS = 2  # Delay between retry attempts in seconds
 CONNECTION_TIMEOUT = 10  # Supabase connection timeout in seconds
 
 # Validation Configuration
-VALID_ROOM_ID_PATTERN = r'^[A-Za-z0-9_-]+$'  # Regex pattern for valid room IDs
+VALID_ROOM_ID_PATTERN = r'^[A-Za-z0-9_-]{1,64}$'  # Regex pattern for valid room IDs (1-64 chars)
 MIN_PEOPLE_COUNT = 0  # Minimum valid people count
 MAX_PEOPLE_COUNT = 1000  # Maximum reasonable people count per room
 

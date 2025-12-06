@@ -30,6 +30,10 @@ The `.env` file is already configured with:
 **Development:**
 ```bash
 python -m server.app
+
+pip install -r ./requirements.txt
+pip install -r "requirements.txt"
+
 ```
 
 **Production:**

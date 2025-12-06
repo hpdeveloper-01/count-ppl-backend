@@ -52,7 +52,7 @@ X-API-KEY: Z8xN7vK2pQ9wL5mR3jT6hF4nY1cX8gS0uE7bV9dA2oI
 ```
 POST /api/v1/process-image-bytes
 Content-Type: multipart/form-data
-X-API-KEY: Z8xN7vK2pQ9wL5mR3jT6hF4nY1cX8gS0uE7bV9dA2oI
+X-API-KEY: your_api_key_here
 
 Form fields:
   - file: raw JPEG

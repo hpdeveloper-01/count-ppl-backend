@@ -25,6 +25,7 @@ MAX_IMAGE_BYTES = 10 * 1024 * 1024  # 10 MB
 MAX_CONTENT_LENGTH = 15 * 1024 * 1024  # 15 MB (allow overhead)
 
 # Validation Patterns
+# Must be 1-64 characters: alphanumeric (a-z, A-Z, 0-9), hyphens (-), underscores (_)
 ROOM_ID_PATTERN = r'^[A-Za-z0-9_-]{1,64}$'
 
 # Supabase Configuration (inherited from main app)
